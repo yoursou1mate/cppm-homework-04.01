@@ -35,11 +35,13 @@ public:
     }
 
     
-   void get_output_address ()
+   std::string get_output_address ()
     {
-       std::to_string(house);
-       std::to_string(appartment);
-       std::cout << city << ", " << street << ", " << house << ", " << appartment << std::endl;
+       std::string full_address;
+       std::string house_1 = std::to_string(house);
+       std::string appartment_1 = std::to_string(appartment);
+       full_address.append(city).append(", ").append(street).append(", ").append(house_1).append(", ").append(appartment_1);
+       return full_address;
    }
 };
 
@@ -75,12 +77,12 @@ int main(int argc, const char * argv[]) {
 
     fin.open("in.txt");
     fin >> n;
-    std::string *arr1 = new std::string[n]{};
-   
+    address* arr = new address[n];
+    
     for (int i = 0; i<n; ++i)
     {
         fin >> c >> s >> h >> a;
-        address Address (c, s, h, a);
+        address Address (c,s,h,a);
         Address.get_output_address();
     }
 
@@ -88,11 +90,10 @@ int main(int argc, const char * argv[]) {
     std::ofstream fout ("out.txt");
     
     fout << n << std::endl;
-//    for (int i = n-1; i>=0; --i)
-//    {
-//        fout << Address.get_output_address() << std::endl;
-//    }
-
+    for (int i = n-1; i>=0; --i)
+    {
+        fout << Address.get_output_address() << std::endl;
+    }
     return 0;
 }
 
