@@ -83,16 +83,16 @@ int main(int argc, const char * argv[]) {
     {
         fin >> c >> s >> h >> a;
         address Address (c,s,h,a);
-        Address.get_output_address();
+        arr[i] = Address;
+        std::cout << Address.get_output_address() << std::endl;
     }
-
-
-    std::ofstream fout ("out.txt");
     
+    std::ofstream fout ("out.txt");
+
     fout << n << std::endl;
     for (int i = n-1; i>=0; --i)
     {
-        fout << Address.get_output_address() << std::endl;
+        fout << arr[i].get_output_address() << std::endl;
     }
     return 0;
 }
