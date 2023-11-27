@@ -8,23 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0089C5212A42355E00851FD8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0089C5202A42355E00851FD8 /* main.cpp */; };
+		00A896192AEECF6A001C29BA /* in.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00A896182AEECF6A001C29BA /* in.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0089C51B2A42355E00851FD8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				00A896192AEECF6A001C29BA /* in.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0089C51D2A42355E00851FD8 /* cppm-homework-04.01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cppm-homework-04.01"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0089C5202A42355E00851FD8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		00A896182AEECF6A001C29BA /* in.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = in.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				0089C5202A42355E00851FD8 /* main.cpp */,
+				00A896182AEECF6A001C29BA /* in.txt */,
 			);
 			path = "cppm-homework-04.01";
 			sourceTree = "<group>";

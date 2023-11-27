@@ -73,7 +73,7 @@ int main(int argc, const char * argv[]) {
     std::string s;
     int h;
     int a;
-    address Address;
+   
 
     fin.open("in.txt");
     fin >> n;
@@ -94,6 +94,8 @@ int main(int argc, const char * argv[]) {
     {
         fout << arr[i].get_output_address() << std::endl;
     }
+    
+    delete [] arr;
     return 0;
 }
 
